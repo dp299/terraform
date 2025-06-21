@@ -77,8 +77,8 @@ jobs:
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v2
       with:
-        aws-access-key-id: ${{ secrets.AKIA4DW2ONP4XTQJXEPE }}
-        aws-secret-access-key: ${{ secrets.0IzP0fFv6Mple/V00MUIsO5JwN4w7nXGt6ar2h6J }}
+        aws-access-key-id: ${{secrets.AWS_ACCESS_KEY_ID  }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: us-east-1
         
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
